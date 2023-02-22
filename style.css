@@ -25,7 +25,7 @@ body{
     width: 327px;
     height: 364px;
     border-radius: 16px;
-    margin: 160px auto 145px;
+    margin: 160px auto 120px;
     padding: 24px;
 }
 
@@ -137,7 +137,7 @@ body{
         width: 412px;
         height: 412px;
         padding: 34px;
-        margin: 143px auto 110px;
+        margin: 143px auto 90px;
     }
 
     .rationg-state__icon-container, .rationg-state__number-container_number{
