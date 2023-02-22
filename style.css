@@ -17,7 +17,6 @@ body{
     font-family: 'Overpass', sans-serif;
     font-size: 15px; 
     background-color: var(--Very-Dark-Blue);
-    overflow: hidden;
 }
 
 .rationg-state, .thakyou-state{
@@ -134,15 +133,15 @@ body{
     }
 
     .rationg-state, .thakyou-state{
-        width: 412px;
-        height: 412px;
+        width: 402px;
+        height: 402px;
         padding: 34px;
         margin: 143px auto 90px;
     }
 
     .rationg-state__icon-container, .rationg-state__number-container_number{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
     .rationg-state__title, .thakyou-state__title{
