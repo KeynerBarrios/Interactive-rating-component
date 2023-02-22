@@ -1,0 +1,159 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 24%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px; 
+    background-color: var(--Very-Dark-Blue);
+    overflow: hidden;
+}
+
+.rationg-state, .thakyou-state{
+    background-color: var(--Dark-Blue);
+    width: 327px;
+    height: 364px;
+    border-radius: 16px;
+    margin: 160px auto 145px;
+    padding: 24px;
+}
+
+.rationg-state__icon-container, .rationg-state__number-container_number{
+    background-color: var(--Medium-Grey);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin-bottom: 22px;
+    color: var(--Light-Grey);
+    border: none;
+}
+
+.rationg-state__title, .thakyou-state__title{
+    color: var(--White);
+    margin-bottom: 22px;
+    font-size: 1.6em;
+}
+
+.rationg-state__description, .thakyou-state__paragraph{
+    color: var(--Light-Grey);
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+.rationg-state__number-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rationg-state__number-container_number:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.rationg-state__number-container_number:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.rationg-state__button{
+    color: var(--White);
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--Orange);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.rationg-state__button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+/*-----------Thanyou state------------*/
+
+.thakyou-state{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thakyou-state__image{
+    width: 150px;
+    margin-bottom: 24px;
+}
+
+.thakyou-stat_result{
+    background-color: var(--Medium-Grey);
+    border-radius: 50px;
+    width: 65%;
+    height: 36px;
+    color: var(--Orange);
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+
+.thakyou-state__paragraph{
+    text-align: center;
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+    color: var(--White);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+} 
+
+/*------------Desktop----------*/
+
+@media (min-width: 600px){
+
+    body{
+        overflow: hidden;
+    }
+
+    .rationg-state, .thakyou-state{
+        width: 412px;
+        height: 412px;
+        padding: 34px;
+        margin: 143px auto 110px;
+    }
+
+    .rationg-state__icon-container, .rationg-state__number-container_number{
+        width: 50px;
+        height: 50px;
+    }
+
+    .rationg-state__title, .thakyou-state__title{
+        font-size: 1.9em;
+    }
+
+    .rationg-state__description, .thakyou-state__paragraph{
+        font-size: 1.07em;
+    }
+
+    .thakyou-stat_result{
+        font-size: 1em;
+    }
+}
